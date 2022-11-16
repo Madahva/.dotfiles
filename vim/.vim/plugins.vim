@@ -12,10 +12,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}	"Auto completion.
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' } "(, + p) Prettier.
 "Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
-
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-
+Plug 'airblade/vim-rooter'
 "Themes
 Plug 'arcticicestudio/nord-vim'
 Plug 'jaredgorski/spacecamp'
@@ -36,9 +35,8 @@ set background=dark
 "colorscheme onedarkpro
 "colorscheme dracula
 colorscheme nord
+
 let g:tokyonight_enable_italic = 1
-
-
 let g:onedark_config = {
     \ 'style': 'cool',
 \}
