@@ -23,6 +23,7 @@ Plug 'ghifarit53/tokyonight-vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'olimorris/onedarkpro.nvim' 
 Plug 'navarasu/onedark.nvim'
+Plug 'EdenEast/nightfox.nvim' 
 
 call plug#end()
  
