@@ -2,14 +2,15 @@ let mapleader=","
 
 nmap <leader>s <Plug>(easymotion-s2)
 nmap <leader>m :NERDTreeFind<CR>
-nmap <leader>q :q<CR>
-nnoremap <Leader>w :w<CR>
+nmap w :w<CR>
+nmap q :q<CR>
 nnoremap <Leader>e :e workSpace/<CR>
+nnoremap <Leader>x :!node %<cr>
+
 
 vnoremap <c-t> :split<CR>:ter<CR>:resize 15<CR>
 nnoremap <c-t> :split<CR>:ter<CR>:resize 15<CR>
 
-nnoremap <Leader>x :!node %<cr>
 
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
@@ -34,7 +35,22 @@ nnoremap <Leader>4 4gt
 nnoremap <Leader>5 5gt
 nnoremap <Leader>. :tabnext<CR>
 
+
 nnoremap <silent> <right> :vertical resize +5<CR>
 nnoremap <silent> <left> :vertical resize -5<CR>
 nnoremap <silent> <up> :resize +5<CR>
 nnoremap <silent> <down> :resize -5<CR>
+
+
+" TAB in general mode will move to text buffer
+ nnoremap <TAB> :bnext<CR>
+" SHIFT-TAB will go back
+ nnoremap <S-TAB> :bprevious<CR>
+
+ " <TAB>: completion.
+ inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+ 
+ " Better tabbing
+ vnoremap < <gv
+ vnoremap > >gv
+ 
