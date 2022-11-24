@@ -44,12 +44,12 @@ syntax on
 
 
 if exists("g:neovide")
-  colorscheme onedarkpro
+  colorscheme dracula
   let g:neovide_cursor_antialiasing = v:true
   let g:neovide_cursor_vfx_mode = "pixiedust"
-  let g:neovide_cursor_vfx_particle_density = 20.0
-  let g:neovide_cursor_vfx_particle_lifetime = 5
-  let g:neovide_cursor_vfx_particle_speed = 20.0
+  "let g:neovide_cursor_vfx_particle_density = 20.0
+  "let g:neovide_cursor_vfx_particle_lifetime = 5
+  "let g:neovide_cursor_vfx_particle_speed = 20.0
   let g:neovide_fullscreen = v:true
   let g:neovide_input_use_logo = v:true  " v:true on macOS
   set termguicolors
