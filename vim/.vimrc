@@ -7,7 +7,7 @@
 filetype on
 set autoindent
 set clipboard=unnamed
-set cmdheight=2
+set cmdheight=1
 set conceallevel=0
 set cursorline
 set encoding=utf-8
