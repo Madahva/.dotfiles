@@ -1,11 +1,16 @@
+
+colorscheme dracula
 "set colorcolumn=95
 "set cursorline
 "set nobackup
 "set noswapfile
+"set number
+"set numberwidth=1
+"set relativenumber
 "set ruler
-"set termguicolors
 filetype on
 set autoindent
+set background=light
 set clipboard=unnamed
 set cmdheight=1
 set conceallevel=0
@@ -20,10 +25,7 @@ set iskeyword+=-
 set laststatus=2
 set mouse=a
 set noshowmode
-set number
-set numberwidth=1
 set pumheight=10
-set relativenumber
 set shiftwidth=2
 set showcmd
 set showmatch
@@ -36,10 +38,10 @@ set splitright
 set sw=2
 set t_Co=256
 set tabstop=2
+set termguicolors
 set timeoutlen=500
 set updatetime=300
 syntax on
-
 "highlight ColoColumn ctermbg=0 guibg=lightgrey
 
 

@@ -1,5 +1,7 @@
 let mapleader=","
 
+nmap <leader>f :Files<CR>
+
 nmap <leader>s <Plug>(easymotion-s2)
 nmap <leader>m :NERDTreeFind<CR>
 nmap w :w<CR>
