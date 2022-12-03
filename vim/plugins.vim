@@ -34,8 +34,8 @@ Plug 'ghifarit53/tokyonight-vim'
 Plug 'jaredgorski/spacecamp'
 Plug 'navarasu/onedark.nvim'
 Plug 'olimorris/onedarkpro.nvim'
+Plug 'dterei/VimCobaltColourScheme'
+Plug 'laniusone/kyotonight.vim'
 
 call plug#end()
-
-let g:airline_theme='dracula'
 

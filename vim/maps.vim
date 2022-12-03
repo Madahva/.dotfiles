@@ -35,7 +35,8 @@ nnoremap <Leader>2 2gt
 nnoremap <Leader>3 3gt
 nnoremap <Leader>4 4gt
 nnoremap <Leader>5 5gt
-nnoremap <Leader>. :tabnext<CR>
+"nnoremap <Leader>. :tabnext<CR>
+nnoremap <TAB> :tabnext<CR>
 
 
 nnoremap <silent> <right> :vertical resize +5<CR>
@@ -45,9 +46,9 @@ nnoremap <silent> <down> :resize -5<CR>
 
 
 " TAB in general mode will move to text buffer
- nnoremap <TAB> :bnext<CR>
+"nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
- nnoremap <S-TAB> :bprevious<CR>
+ "nnoremap <S-TAB> :bprevious<CR>
 
  " <TAB>: completion.
  inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"

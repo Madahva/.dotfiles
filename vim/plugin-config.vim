@@ -2,12 +2,45 @@
 "                       ---- AirLine ----
 "
 
+let g:kyotonight_italic = 1
+let g:kyotonight_italic_comments = 1
+
+let g:kyotonight#blue0 = ['#00bfff', '1']  "Curly brackets, parentensis, etc.;
+let g:kyotonight#green = ['#ccf2ff', '1']  "Strings;
+let g:kyotonight#fg = ['#b3b3ff', '1']  "Components;
+let g:kyotonight#blue1 = ['#80ccff', '1']     "Variables;
+let g:kyotonight#teal = ['#00ffff', '1']  "Constantes y elementos;
+let g:kyotonight#magenta = ['#d966ff', '1']  " iguales
+let g:kyotonight#grey1 = ['#00e6e6', '1']
+
+let g:kyotonight#none        = get(g:, "kyotonight#none", ["NONE", "NONE"])
+let g:kyotonight#cl          = get(g:, "kyotonight#cl", ["#292e42", "NONE"])
+let g:kyotonight#hl          = get(g:, "kyotonight#hl", ["#33467c", "7"])
+let g:kyotonight#black0      = get(g:, "kyotonight#black0", ["#0f0f14", "NONE"])
+let g:kyotonight#bg          = get(g:, "kyotonight#bg", ["#1a1b26", "0"])
+let g:kyotonight#black1      = get(g:, "kyotonight#black1", ["#24283b", "8"])
+let g:kyotonight#grey0       = get(g:, "kyotonight#grey0", ["#414868", "7"])
+let g:kyotonight#grey1       = get(g:, "kyotonight#grey1", ["#565f89", "15"])
+let g:kyotonight#fg          = get(g:, "kyotonight#fg", ["#a9b1d6", "NONE"])
+let g:kyotonight#cream       = get(g:, "kyotonight#cream", ["#cfc9c2", "15"])
+let g:kyotonight#cyan1       = get(g:, "kyotonight#cyan1", ["#b4f9f8", "14"])
+let g:kyotonight#teal        = get(g:, "kyotonight#teal", ["#73daca", "6"])
+let g:kyotonight#blue1       = get(g:, "kyotonight#blue1", ["#7dcfff", "12"])
+let g:kyotonight#blue0       = get(g:, "kyotonight#blue0", ["#7aa2f7", "4"])
+let g:kyotonight#cyan0       = get(g:, "kyotonight#cyan0", ["#2ac3de", "6"])
+let g:kyotonight#red         = get(g:, "kyotonight#red", ["#f7768e", "1"])
+let g:kyotonight#orange      = get(g:, "kyotonight#orange", ["#ff9e64", "3"])
+let g:kyotonight#yellow      = get(g:, "kyotonight#yellow", ["#e0af68", "11"])
+let g:kyotonight#green       = get(g:, "kyotonight#green", ["#9ece6a", "2"])
+let g:kyotonight#magenta     = get(g:, "kyotonight#magenta", ["#bb9af7", "5"])
+
+
 function! AirlineInit()
   let g:airline_section_a = airline#section#create(['filetype','',''])
   let g:airline_section_b = airline#section#create_left(['','hunks','%f'])
   let g:airline_section_c = airline#section#create([''])
   let g:airline_section_x = airline#section#create([''])
-  let g:airline_section_y = airline#section#create([''])
+  let g:airline_section_y = airline#section#create(['%l'])
   let g:airline_section_z = airline#section#create_right(['','%P'])
   let g:airline_extensions = []
 endfunction
